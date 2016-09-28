@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="index.css"/><input class="h1" type="text" placeholder="Title" style="width:100%"/><HR></HR><textarea class="regular" id="body" placeholder="Write your text here..." style="width:100%; height:80%"></textarea><script>const {globalShortcut} = require('electron')
+
+app.on('ready', () => {
+  // Register a 'CommandOrControl+X' shortcut listener.
+  const ret = globalShortcut.register('CommandOrControl+S', () => {
+    // On press, do this
+    console.log("Button Pressed!!!")
+  })
+})
+
+// Unregister key command.
+app.on('will-quit', () => { globalShortcut.unregisterAll() })</script>

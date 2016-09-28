@@ -1,0 +1,56 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:700,400'
+
+html
+  -webkit-app-region drag
+
+HR
+  margin-top 0.5cm
+  margin-bottom 0.5cm
+  height 4px
+  background-color black
+  border-radius 50px
+  border none
+
+hover-animation()
+  &:hover::-webkit-input-placeholder
+        color #cccccc
+        transition-duration 0.1s
+  &:focus::-webkit-input-placeholder
+        color #e6e6e6
+
+body
+  margin 1cm
+  -webkit-app-region no-drag
+  overflow hidden
+
+textarea, input
+  resize none
+  border none
+  &:focus
+    outline none
+
+.h1
+  font-size 30pt
+  font-weight bold
+  font-family Roboto
+  hover-animation()
+
+.regular
+  font-family Roboto
+  font-size 15pt
+  hover-animation()
+
+/**button
+  color #6496c8
+  background rgba(0,0,0,0)
+  border solid 5px #6496c8
+  height 1cm
+  width 2.67cm
+  border-radius 10px
+  font-size 25pt
+  font-family Roboto
+  float-right
+
+button:active
+  border-color #346392
+  outline none**/
