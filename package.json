@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "electron-prebuilt": "1.4.1",
-    "jsdom": "9.5.0"
+    "jsdom": "9.5.0",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
     "stylus": "0.54.5"
