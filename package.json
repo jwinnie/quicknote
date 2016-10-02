@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm ./index.html; rm ./index.css; pug ./source/index.pug -o ./ && stylus ./source/index.styl -o ./ && electron ."
+    "start": "rm -f ./index.html; rm -f ./index.css; pug ./source/index.pug -o ./ && stylus ./source/index.styl -o ./ && electron ."
   },
   "dependencies": {
     "electron-prebuilt": "1.4.1",
-    "jsdom": "9.5.0"
+    "jsdom": "9.5.0",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
-    "pug": "2.0.0",
     "stylus": "0.54.5"
   },
   "author": "J Winnie",
