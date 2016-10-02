@@ -7,7 +7,6 @@ Assumes Ubuntu/Debian. YMMV.
 
 ```
 sudo apt-get install nodejs npm
-sudo npm install pug-cli -g
 npm install
 ```
 
