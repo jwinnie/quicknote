@@ -1,17 +1,18 @@
 # quicknote
 A simple text editor in Node.js and Electron, for fun and learning.
 
-## Developer instructions
+![quicknote-screenshot-mac-1](/screenshots/quicknote-screenshot-mac-1.png)
 
-Assumes Ubuntu/Debian. YMMV.
+## Developer instructions (YMMV)
 
-```
-sudo apt-get install nodejs npm
-npm install
-```
+1. Install Node.js .
+  - for Ubuntu/Debian: ```apt-get install nodejs npm```.
+  -  for OSX: go [here]("https://nodejs.org/en/download/").
+2. Download file
+  - With git clone: ```git clone https://github.com/jwinnie/quicknote.git```.
+  - You can also download the zip from Github under "Clone or Download".
+3. cd to directory and ```npm install```.
 
-Then to run the application:
+To run, ```npm start```.
 
-```
-npm start
-```
+To generate .app, ```npm run package-mac```.
