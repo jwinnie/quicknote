@@ -1,7 +1,7 @@
 {
-  "name": "electron-test",
+  "name": "quicknote",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple text editor in Node.js and Electron, for fun and learning.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
