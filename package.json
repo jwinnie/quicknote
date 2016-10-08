@@ -9,11 +9,11 @@
   },
   "dependencies": {
     "electron-prebuilt": "1.4.1",
-    "jsdom": "9.5.0",
-    "pug-cli": "^1.0.0-alpha6"
+    "jsdom": "9.5.0"
   },
   "devDependencies": {
-    "stylus": "0.54.5"
+    "stylus": "0.54.5",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "author": "J Winnie",
   "license": "ISC"
