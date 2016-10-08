@@ -7,7 +7,7 @@ A simple text editor in Node.js and Electron, for fun and learning.
 
 1. Install Node.js .
   - for Ubuntu/Debian: ```apt-get install nodejs npm```.
-  -  for OSX: go [here](https://nodejs.org/en/download/).
+  - for OSX: go [here](https://nodejs.org/en/download/).
 2. Download file
   - With git clone: ```git clone https://github.com/jwinnie/quicknote.git```.
   - You can also download the zip from Github under "Clone or Download".
