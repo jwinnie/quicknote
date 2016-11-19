@@ -45,13 +45,15 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
+
+
 // Save file function.
 /**function save () {
-  //const {dialog} = require('electron')
-  const html = require('./dom.js')
-  html.main()
-  /**dialog.showSaveDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}, (filename) => {
-    fs.writeFile(filename, body)
+  const {dialog} = require('electron')
+
+  dialog.showSaveDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}, (filename) => {
+    //fs.writeFile(filename, "Hello World!")
+    console.log(filename)
   })
 }
 

@@ -8,8 +8,7 @@
     "start": "rm -f ./index.html; rm -f ./index.css; pug ./source/index.pug -o ./ && stylus ./source/index.styl -o ./ && electron ."
   },
   "dependencies": {
-    "electron-prebuilt": "1.4.1",
-    "jsdom": "9.5.0"
+    "electron-prebuilt": "1.4.1"
   },
   "devDependencies": {
     "stylus": "0.54.5",
