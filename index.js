@@ -7,7 +7,7 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden-inset'})
+  win = new BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden-inset', webPreferences:{nodeIntegration:true}})
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`)
@@ -45,6 +45,16 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
+const {ipcMain} = require('electron')
+ipcMain.on('asynchronous-message', (event, arg) => {
+  console.log(arg)  // prints "ping"
+  event.sender.send('asynchronous-reply', 'pong')
+})
+
+ipcMain.on('synchronous-message', (event, arg) => {
+  console.log(arg)  // prints "ping"
+  event.returnValue = 'pong'
+})
 
 
 // Save file function.
@@ -56,8 +66,8 @@ app.on('activate', () => {
     console.log(filename)
   })
 }
-
-// Register a 'CommandOrControl+X' shortcut listener.
+**/
+//Register a 'CommandOrControl+X' shortcut listener.
 const {globalShortcut} = require('electron')
 
 app.on('ready', () => {
@@ -69,4 +79,4 @@ app.on('ready', () => {
 })
 
 // Unregister key command.
-app.on('will-quit', () => { globalShortcut.unregisterAll() })**/
+app.on('will-quit', () => { globalShortcut.unregisterAll() })

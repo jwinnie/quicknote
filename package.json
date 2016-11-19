@@ -7,6 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -f ./index.html; rm -f ./index.css; pug ./source/index.pug -o ./ && stylus ./source/index.styl -o ./ && electron ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwinnie/quicknote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jwinnie/quicknote/issues"
+  },
+  "homepage": "https://github.com/jwinnie/quicknote#readme",
   "dependencies": {
     "electron-prebuilt": "1.4.1"
   },
